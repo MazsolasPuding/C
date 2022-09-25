@@ -1,0 +1,4 @@
+D:/Coding/C/parhuzamosHomeWorkOne/Build/CMakeFiles/HomeWorkOne.dir
+D:/Coding/C/parhuzamosHomeWorkOne/Build/CMakeFiles/INSTALL.dir
+D:/Coding/C/parhuzamosHomeWorkOne/Build/CMakeFiles/ALL_BUILD.dir
+D:/Coding/C/parhuzamosHomeWorkOne/Build/CMakeFiles/ZERO_CHECK.dir

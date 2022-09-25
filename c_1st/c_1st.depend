@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1636289692 source:d:\coding\c\c_1st\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1635329889 source:d:\coding\c\c_1st\arrays.c
+	<stdio.h>
+	<stdlib.h>
+
+1635334107 source:d:\coding\c\c_1st\if_statement.c
+	<stdio.h>
+	<stdlib.h>
+
+1635337750 source:d:\coding\c\c_1st\calculator.c
+	<stdio.h>
+	<stdlib.h>
+
+1635338419 source:d:\coding\c\c_1st\switch.c
+	<stdio.h>
+	<stdlib.h>
+
+1635341814 source:d:\coding\c\c_1st\struct.c
+	<stdio.h>
+	<stdlib.h>
+
+1636194207 source:d:\coding\c\c_1st\readfile.c
+	<stdio.h>
+	<stdlib.h>
+

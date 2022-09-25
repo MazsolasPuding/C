@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int w, h, m[10][10];
+
+void getMatrix() {
+	FILE* file;
+	char* line, *number;
+
+	h = 0;
+
+	file = fopen("matrix.txt", "r");
+	while (!feof(file)) {
+		w = 0;
+		fscanf(file, "&s", line);
+		number = strtok(line, ",");
+		while (number != NULL) {
+			m[h][w] = atoi(number);
+			w++;
+			number = strtok(NULL, ",");
+		}
+		printf("\n");
+		h++;
+	}
+
+}
+
+void printMatrix() {
+	int i, j;
+	for (i = 0; i < h; i++) {
+		for (j = 0; j < w; j++) {
+			printf("&d", m[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+void main() {
+	getMatrix();
+	printMatrix();
+	printf("Done!\n");
+}

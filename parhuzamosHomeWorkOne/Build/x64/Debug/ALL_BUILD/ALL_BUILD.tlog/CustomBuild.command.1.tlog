@@ -1,0 +1,10 @@
+^D:\CODING\C\PARHUZAMOSHOMEWORKONE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/C/parhuzamosHomeWorkOne -BD:/Coding/C/parhuzamosHomeWorkOne/Build --check-stamp-file D:/Coding/C/parhuzamosHomeWorkOne/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

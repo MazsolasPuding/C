@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main() {
+
+    char line[255];
+    float array[255];
+    int n = 0, max = 0, i;
+    int lineIndex = 0, rowIndex= 0;
+
+    FILE *fp;
+    fp = fopen("matrix.txt", "r");
+
+
+    while(fgets(line, 255, fp) != NULL) {
+        printf("%s", line);
+        char *token = strtok(line, " ");
+
+        while(token != NULL){
+            array[n] = atof(token);
+            token = strtok(NULL, " ");
+
+            if(array[n] > array[rowIndex]){
+                rowIndex = n;
+            }
+            n++;
+        }
+    }
+    printf("\n\n");
+
+    for(i=0; i<n; i++){
+        printf("%f ", array[i]);
+        if(array[i] > array[max]){
+            max = i;
+        }
+    }
+
+    printf("\nThe smallest number's index: %d", max);
+    printf("\nThe smallest number: %f", array[max]);
+    fclose(fp);
+    return array[max];
+}

@@ -1,0 +1,5 @@
+﻿  main.c
+D:\Coding\C\parhuzamosHomeWorkOne\main.c(26,38): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+D:\Coding\C\parhuzamosHomeWorkOne\main.c(21,1): warning C4047: 'initializing': 'char *' differs in levels of indirection from 'int'
+D:\Coding\C\parhuzamosHomeWorkOne\main.c(27): warning C4700: uninitialized local variable 'largest' used
+  HomeWorkOne.vcxproj -> D:\Coding\C\parhuzamosHomeWorkOne\Build\Debug\HomeWorkOne.exe
